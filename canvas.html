@@ -221,6 +221,17 @@
                 }
             });
 
+			//MENU LATERAL
+			$("#seta a").click(function(event,ui){
+				if( $("#menuitens").attr("status")=="hidden" ){
+					$("#menuitens").attr("status","show");
+					$("#menuitens").css("width","140");
+				}else{
+					$("#menuitens").attr("status","hidden");
+					$("#menuitens").css("width","80");
+				}
+			});
+
 
             //FUNÇÕES==============================
             //ID ÚNICO (construido por data, mês, ano, hora, minuto, segundos, milisegundos e index)
@@ -288,13 +299,64 @@
                 $(seletor).attr("areacandidata",id);
             }
 
-        });
 
-    
-        
+        });
      </script>
+
+<style type="text/css">
+
+	#menulateral{
+		background-color:;
+		position:absolute;
+		top:80px;
+		left:-80px;
+		z-index:1;
+	}
+
+	#menulateral a{
+		display:block;
+		padding:6px;
+	}
+
+	#seta{
+		background-color:white;
+		float:left;
+		width:40px;
+		height:40px;
+		border-radius: 0 50% 50% 0;
+	}
+
+	#seta img{
+		margin-top:6;
+		margin-left:4;
+	}
+
+	#menuitens{
+		background-color:white;
+		float:left;
+		width:80px;
+		text-align:right;
+
+		-webkit-transition: width 0.75s; /* For Safari 3.1 to 6.0 */
+		transition: width 0.75s;
+	}
+</style>
 </head>
 <body>
+<div id="menulateral">
+	<div id="menuitens" status="hidden">
+		<a href="#"><img src="imagens/icones/save.png" width="40" height="40"></a>
+		<a href="#"><img src="imagens/icones/user.png" width="40" height="40"></a>
+		<a href="#"><img src="imagens/icones/user.png" width="40" height="40"></a>
+		<a href="#"><img src="imagens/icones/user.png" width="40" height="40"></a>
+		<a href="#"><img src="imagens/icones/user.png" width="40" height="40"></a>
+		<a href="#"><img src="imagens/icones/user.png" width="40" height="40"></a>
+		<a href="#"><img src="imagens/icones/user.png" width="40" height="40"></a>
+		
+	</div>
+	<div id="seta"><a href="#"><img src="imagens/icones/menulateral.png" /></a></div>
+</div>
+
 <div class="openpostits"><span>P's</span></div>
 <div class="newpostit"><span>NP</span></div>
 <div id="lixeira"><img src='imagens/icones/dustbin.png'/></div>
