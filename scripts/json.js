@@ -68,13 +68,12 @@ function json(){
                     $("#tempo .receberpostit").append('<li postit-id="'+data.Postit[i].postit_id+'" class="postit" autor="'+data.Postit[i].user_id+'" areacandidata="tempo" style="display: block; z-index: 1;">'+data.Postit[i].postit_text+'</li>');
                 }
 
-                if( data.Postit[i].box_id == 11 ){ //CUSTOS
+                if( data.Postit[i].box_id == 12 ){ //CUSTOS
                     $("#custos .receberpostit").append('<li postit-id="'+data.Postit[i].postit_id+'" class="postit" autor="'+data.Postit[i].user_id+'" areacandidata="custos" style="display: block; z-index: 1;">'+data.Postit[i].postit_text+'</li>');
                 }
                             
             }
-			
-			
+	
 		});
 
 	}

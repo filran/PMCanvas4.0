@@ -4,6 +4,7 @@
     "manager_id":"1",
     "manager_name":"Filipe",
  
+
     "Box":
         [
             {"box_id":"0", "box_name":"justificativas"},
@@ -22,9 +23,7 @@
         ],
         
     "Postit":
-        [
-            {"box_id":"", "user_id":"", "postit_id":"", "postit_text":""},
-        
+        [     
             {"box_id":"0", "user_id":"1", "postit_id":"1", "postit_text":"Colesterol Aumentado"},
             {"box_id":"0", "user_id":"1", "postit_id":"2", "postit_text":"Mobilidade reduzida"},
             {"box_id":"0", "user_id":"1", "postit_id":"3", "postit_text":"Imagem mal cuidada"},
@@ -82,9 +81,13 @@
             {"box_id":"11", "user_id":"1", "postit_id":"44", "postit_text":"Aquisições"},
             {"box_id":"11", "user_id":"2", "postit_id":"45", "postit_text":"Exercícios físicos"},
 
-            {"box_id":"12", "user_id":"1", "postit_id":"46", "postit_text":""}
-            
-            
+            {"box_id":"12", "user_id":"1", "postit_id":"46", "postit_text":"1.R$90(mat.) + R$300(m.obra)---R$390"},
+	    {"box_id":"12", "user_id":"2", "postit_id":"47", "postit_text":"2.R$1100(serviços)---R$1100"},
+	    {"box_id":"12", "user_id":"1", "postit_id":"48", "postit_text":"3.R$750(mat.)+R$450(serv.)---R$1.200"},
+	    {"box_id":"12", "user_id":"2", "postit_id":"49", "postit_text":"4.R$500(mat)+R$1000(eqpto)---R$1500"},
+	    {"box_id":"12", "user_id":"1", "postit_id":"46", "postit_text":"5.R$1.400(serviços)---R$1.400"},
+    	    {"box_id":"12", "user_id":"1", "postit_id":"46", "postit_text":"6.+ reserva---R$560"},
+	    {"box_id":"12", "user_id":"1", "postit_id":"46", "postit_text":"7.Total---R$6.160"}
         ],
         
     "User":
