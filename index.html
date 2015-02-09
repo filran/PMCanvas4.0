@@ -51,23 +51,18 @@
 
     
     <!--Ler dados do JSON-->
-    <script type="text/javascript" src="scripts/json.js"></script>
-    
-    <script type="text/javascript">              
-         
-    </script>
+	<!--Obter projetos-->
+	<script type="text/javascript" src="json/get_projects.js"></script> 
+
 </head>
 <body>
 	<div id="main">
 		<div id="header"><img src="imagens/pmcanvas.png" /><h1>PMCanvas<br>Modo Quadro Interatito</h1></div>
 		<div id="formulario">
-			<form method="POST" action="canvas.html">
-				<select name="projetos">
+			<form method="POST" action="canvas.php">
+				<select name="projetos" id="projetos">
 					<option value="0">Escolha um projeto</option>
-					<option value="0"></option>					
-					<option value="1">Projeto A</option>
-					<option value="2">Projeto B</option>
-					<option value="3">Projeto C</option>
+					<option value="0">----------</option>					
 				</select>
 				<input id="submit" type="submit" name="submit" value="Abrir">
 			</form>

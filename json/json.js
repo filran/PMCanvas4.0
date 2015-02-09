@@ -10,7 +10,7 @@ function json(){
 	json.prototype.resgatarValores = function(){
 
 		// Estrutura de resultado.
-		$.getJSON('scripts/dados.json', function(data){
+		$.getJSON('json/dados.json', function(data){
 		
 			$('#srv_gp').html(data.manager_name); //GP
 			$('#srv_pitch').html(data.canvas_name); //PITCH

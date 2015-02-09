@@ -43,10 +43,11 @@
     <script type="text/javascript" src="scripts/plugins/cursor/cursor.js"></script>
     
     <!--Ler dados do JSON-->
-    <script type="text/javascript" src="scripts/json.js"></script>
+<!--    <script type="text/javascript" src="json/json.js"></script>-->
+
     
     <script type="text/javascript">              
-        $(function(){             
+        $(function(){  
                  
             //#WRAP=======================================
             //Redimensionar
@@ -343,6 +344,12 @@
 </style>
 </head>
 <body>
+<div id="dados" style="visibility:visible; position:none">
+	<span id="dados_projeto" project_id="<?php echo $_POST['projetos'] ?>"></span>
+	<span id="dados_canvas" canvas_id=""></span>
+</div>
+
+
 <div id="menulateral">
 	<div id="menuitens" status="hidden">
 		<a href="#"><img src="imagens/icones/save.png" width="40" height="40"></a>
@@ -412,6 +419,7 @@
 		    <li class="letter">v</li>
 		    <li class="letter">b</li>
 		    <li class="letter">n</li>
+
 		    <li class="letter">m</li>
 		    <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
 		    <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
@@ -467,8 +475,8 @@
 <div id="wrap" class="centralizar_div">
     <ul id="pmcanvas">
         <ul id="header">
-            <li id="gp"><div><h1>GP</h1><span id="srv_gp">NOME_DO_GERENTE</span></div></li>
-            <li id="pitch"><div><h1>PITCH</h1><span id="srv_pitch">PITCH_DO_CANVAS</span></div></li>
+            <li id="gp"><div><h1>GP</h1><span id="srv_gp"></span></div></li>
+            <li id="pitch"><div><h1>PITCH</h1><span id="srv_pitch"></span></div></li>
         </ul>
 
         <ul id="area" class="area">
@@ -555,6 +563,8 @@
     </ul>
 </div>
 
-</body>
+<!--LER JSON-->
+<script type="text/javascript" src="json/get_canvas.js"></script>
 
+</body>
 </html>
